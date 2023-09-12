@@ -10,8 +10,12 @@ package com.summer.iot.disruptor.event;
 public class DataEvent<T> {
 	public T data;
 
-	public T getData() {return data;}
+	public T getData() {
+		return data;
+	}
 
-	public void setData(T data) {this.data = data;}
+	public void setData(T data) {
+		this.data = data;
+	}
 
 }

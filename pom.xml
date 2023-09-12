@@ -11,7 +11,10 @@
 	<modules>
 		<module>iot-dependencies</module>
 		<module>iot-disruptor</module>
-		<module>iot-rule-engine</module>
+        <module>iot-starter</module>
+		<module>iot-components</module>
+		<module>iot-framework</module>
+		<module>iot-manager</module>
 	</modules>
 
 	<name>${project.artifactId}</name>

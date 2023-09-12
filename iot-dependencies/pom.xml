@@ -3,7 +3,6 @@
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>iot-dependencies</artifactId>
@@ -28,6 +27,7 @@
 
 		<!-- 统一依赖管理 -->
 		<spring.boot.version>2.7.10</spring.boot.version>
+		<spring-cloud.version>2021.0.7</spring-cloud.version>
 		<!-- Web 相关 -->
 		<springdoc.version>1.6.15</springdoc.version>
 		<knife4j.version>4.1.0</knife4j.version>
@@ -63,6 +63,7 @@
 		<guava.version>31.1-jre</guava.version>
 		<guice.version>5.1.0</guice.version>
 		<transmittable-thread-local.version>2.14.2</transmittable-thread-local.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<commons-net.version>3.8.0</commons-net.version>
 		<jsch.version>0.1.55</jsch.version>
 		<tika-core.version>2.7.0</tika-core.version>
@@ -78,6 +79,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -147,6 +156,12 @@
 				<groupId>com.lmax</groupId>
 				<artifactId>disruptor</artifactId>
 				<version>${disruptor.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
 			</dependency>
 
 		</dependencies>
