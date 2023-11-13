@@ -8,32 +8,18 @@
 		<version>${revision}</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>iot-core</artifactId>
+	<artifactId>iot-common</artifactId>
 	<packaging>jar</packaging>
 
 	<properties>
-		<maven.compiler.source>8</maven.compiler.source>
-		<maven.compiler.target>8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.summer</groupId>
-			<artifactId>iot-common</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.netty</groupId>
-			<artifactId>netty-all</artifactId>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
 		</dependency>
 	</dependencies>
+
 
 </project>

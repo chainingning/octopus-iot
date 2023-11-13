@@ -61,6 +61,4 @@ public abstract class AbstractNumberType<N extends Number> extends AbstractType<
 	}
 
 
-
-
 }

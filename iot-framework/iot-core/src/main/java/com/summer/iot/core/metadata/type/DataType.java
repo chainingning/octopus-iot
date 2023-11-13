@@ -1,6 +1,7 @@
 package com.summer.iot.core.metadata.type;
 import com.summer.iot.core.format.TypeFormat;
 import com.summer.iot.core.metadata.Metadata;
+import com.summer.iot.core.protocol.OperatingResult;
 
 /**
  * <p>
@@ -10,4 +11,12 @@ import com.summer.iot.core.metadata.Metadata;
  * @author <a href="mail to: ning.chai@foxmail.com" rel="nofollow">chaining</a>
  */
 public interface DataType extends Metadata, TypeFormat {
+
+	/**
+	 * 验证是否合法
+	 *
+	 * @param value 值
+	 * @return ValidateResult
+	 */
+	OperatingResult validate(Object value);
 }
