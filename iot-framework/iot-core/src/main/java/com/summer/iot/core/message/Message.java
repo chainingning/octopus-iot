@@ -1,6 +1,4 @@
 package com.summer.iot.core.message;
-
-import com.summer.iot.common.json.Jsonable;
 import org.springframework.lang.Nullable;
 import java.util.Map;
 

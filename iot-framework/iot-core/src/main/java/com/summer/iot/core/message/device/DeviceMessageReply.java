@@ -7,7 +7,7 @@ package com.summer.iot.core.message.device;
  *
  * @author <a href="mail to: ning.chai@foxmail.com" rel="nofollow">chaining</a>
  */
-public interface DeviceMessageReply extends DeviceMessage{
+public interface DeviceMessageReply extends DeviceMessage {
 	/**
 	 * 请求是否成功
 	 *
